@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<h1>Đếm số ký tự số</h1>
+<p>Mảng a = [1,a,0,b,1,c,0,d,2,e,0,f,0,g,0]</p>
+<script>
+    let arr = ["1","a","0","b","1","c","0","d","2","e","0","f","0","g","0"];
+    let num = arr.filter(ch => ch >= '0' && ch <= '9');
+    let count = num.length;
+    document.write("Số ký tự số trong mảng là: " + count + "<br/>" );
+    document.write("Các ký tự số trong mảng là: " + num);
+</script>
+</body>
+</html>

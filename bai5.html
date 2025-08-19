@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<h1>Kiểm tra xem hai chuỗi có giống nhau không</h1>
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+<button onclick="kiemtrachuoi()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+function kiemtrachuoi(){
+    let chuoi1 = document.getElementById("txt1").value;
+    let chuoi2 = document.getElementById("txt2").value;
+    if (chuoi1 === chuoi2 && chuoi1.length === chuoi2.length){
+        document.getElementById("result").innerHTML = ("Chuỗi " + chuoi1 + " và chuỗi " + chuoi2 + " giống nhau")
+    }else {
+        document.getElementById("result").innerHTML = ("Chuỗi " + chuoi1 + " và chuỗi " + chuoi2 + " không giống nhau")
+    }
+}
+</script>
+</body>
+</html>
